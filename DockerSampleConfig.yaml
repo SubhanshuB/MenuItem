@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kubdeployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: KUB
+  template:
+    metadata:
+      labels:
+        app: KUB
+    spec:
+      containers:
+      - name: kub
+        image: containerregistrynaam.azurecr.io/kubrepos:latest
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: dsconfigsn
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dockersampleconfig
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: KUB
