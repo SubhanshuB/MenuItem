@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kubdeployment
+  name: menuitemlistingdeployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: KUB
+      app: MENUITEMLISTING
   template:
     metadata:
       labels:
-        app: KUB
+        app: MENUITEMLISTING
     spec:
       containers:
-      - name: kub
-        image: containerregistrynaam.azurecr.io/kubrepos:latest
+      - name: menuitemlisting
+        image: registrynaam.azurecr.io/conrepos:latest
         ports:
         - containerPort: 8080
       imagePullSecrets:
-      - name: dsconfigsn
+      - name: menuitemconfigsn
 
 ---
 apiVersion: v1
@@ -30,4 +30,4 @@ spec:
   ports:
   - port: 80
   selector:
-    app: KUB
+    app: MENUITEMLISTING
