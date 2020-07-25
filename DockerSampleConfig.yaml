@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: menuitemlisting
-        image: regnaam.azurecr.io/conrepos:latest
+        image: registrynaam.azurecr.io/conrepos:latest
         ports:
         - containerPort: 8080
       imagePullSecrets:

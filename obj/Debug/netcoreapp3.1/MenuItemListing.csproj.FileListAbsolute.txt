@@ -27,3 +27,4 @@ C:\Users\Subhanshu\source\repos\MenuItemListing\bin\Debug\netcoreapp3.1\Microsof
 C:\Users\Subhanshu\source\repos\MenuItemListing\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\Subhanshu\source\repos\MenuItemListing\obj\Debug\netcoreapp3.1\MenuItemListing.csproj.CoreCompileInputs.cache
 C:\Users\Subhanshu\source\repos\MenuItemListing\obj\Debug\netcoreapp3.1\MenuItemListing.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Subhanshu\source\repos\MenuItemListing\bin\Debug\netcoreapp3.1\DockerSampleConfig.yaml
