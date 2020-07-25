@@ -14,11 +14,11 @@ spec:
     spec:
       containers:
       - name: menuitemlisting
-        image: registrynaam.azurecr.io/conrepos:latest
+        image: registrynaam.azurecr.io/menurepos:latest
         ports:
         - containerPort: 8080
       imagePullSecrets:
-      - name: menuitemconfigsn
+      - name: mitemconfigsn
 
 ---
 apiVersion: v1
